@@ -19,14 +19,14 @@
       <a-assets>
         <a-asset-item id="messageText" src="message.html"></a-asset-item>
 
-        <img id="mgr" src="mgr.png" crossorigin="anonymous"/>
-        <img id="mgrPoster" src="mgrSquare.jpg" crossorigin="anonymous"/>
+        <img id="cat" src="cat.jpg" crossorigin="anonymous"/>
+        <img id="catPoster" src="catSquare.jpg" crossorigin="anonymous"/>
 
-        <img id="furi" src="furi.png" crossorigin="anonymous"/>
-        <img id="furiPoster" src="furiSquare.png" crossorigin="anonymous"/>
+        <img id="dog" src="dog.jpg" crossorigin="anonymous"/>
+        <img id="dogPoster" src="dogSquare.jpg" crossorigin="anonymous"/>
 
-        <img id="nier" src="nier.png" crossorigin="anonymous"/>
-        <img id="nierPoster" src="nierSquare.png" crossorigin="anonymous"/>
+        <img id="rabbit" src="rabbit.jpg" crossorigin="anonymous"/>
+        <img id="rabbitPoster" src="rabbitSquare.jpeg" crossorigin="anonymous"/>
         <a-mixin
           id="frame"
           geometry="primitive: plane; width: 1.05; height: 1.55"
@@ -73,16 +73,16 @@
       <a-entity id="ui" position="0 1.6 -2.5">
         <!-- Poster menu -->
         <a-entity id="menu" highlight>
-          <a-entity id="mgrButton" position="-2 0 0" mixin="frame" class="raycastable menu-button">
-            <a-entity material="src: #mgr" mixin="poster"></a-entity>
+          <a-entity id="catButton" position="-2 0 0" mixin="frame" class="raycastable menu-button">
+            <a-entity material="src: #cat" mixin="poster"></a-entity>
           </a-entity>
 
-          <a-entity id="furiButton" position="0 0 0" mixin="frame" class="raycastable menu-button">
-            <a-entity material="src: #furi" mixin="poster"></a-entity>
+          <a-entity id="dogButton" position="0 0 0" mixin="frame" class="raycastable menu-button">
+            <a-entity material="src: #dog" mixin="poster"></a-entity>
           </a-entity>
 
-          <a-entity id="nierButton" position="2 0 0" mixin="frame" class="raycastable menu-button">
-            <a-entity material="src: #nier" mixin="poster"></a-entity>
+          <a-entity id="rabbitButton" position="2 0 0" mixin="frame" class="raycastable menu-button">
+            <a-entity material="src: #rabbit" mixin="poster"></a-entity>
           </a-entity>
         </a-entity>
 
@@ -95,9 +95,9 @@
           scale="0.001 0.001 0.001"
           geometry="primitive: plane; width: 1.5; height: 2.8"
           material="color: #333333; shader: flat; transparent: false" class="raycastable">
-          <a-entity id="mgrImage" mixin="movieImage" material="src: #mgrPoster" visible="false" position="0 0.7 0"></a-entity>
-          <a-entity id="furiImage" mixin="movieImage" material="src: #furiPoster" visible="false" position="0 0.7 0"></a-entity>
-          <a-entity id="nierImage" mixin="movieImage" material="src: #nierPoster" visible="false" position="0 0.7 0"></a-entity>
+          <a-entity id="catImage" mixin="movieImage" material="src: #catPoster" visible="false" position="0 0.7 0"></a-entity>
+          <a-entity id="dogImage" mixin="movieImage" material="src: #dogPoster" visible="false" position="0 0.7 0"></a-entity>
+          <a-entity id="rabbitImage" mixin="movieImage" material="src: #rabbitPoster" visible="false" position="0 0.7 0"></a-entity>
           <a-entity id="movieTitle"
             position="-0.68 -0.25 0"
             text="shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Ponyo (2003)"></a-entity>
